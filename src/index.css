@@ -1,0 +1,36 @@
+@import url(../node_modules/semantic-ui-css/semantic.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.custom-round-btn {
+  width: 100px;
+}
+
+.main-heading {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+
+.custom-block-btn {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.last-heading {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.card-heading {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card-text {
+  font-weight: 400;
+  font-size: 14px;
+}
