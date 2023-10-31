@@ -1,88 +1,54 @@
 import React, { useState } from "react";
-import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
-
-import Card from "react-bootstrap/Card";
+import { MdArrowBackIosNew } from "react-icons/md";
 import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
-
-import ProfileIcon from "../images/profile-icon.svg";
-import PrimaryCard from "../components/Card/PrimaryCard";
 import DeleteIcon from "../images/delete-icon.svg";
+import AccountCard from "../components/Card/AccountCard";
 
 const MyAccount = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
-      <div className="row">
+      <div className="pt-5 mb-3">
         <div
-          className="col-md-6 col-sm-12 mx-auto d-flex flex-column justify-content-between"
-          style={{ minHeight: "100vh", backgroundColor: "#EFEFEF" }}
+          className="d-flex align-items-center justify-content-center"
+          style={{ position: "relative" }}
         >
-          <div className="pt-5 mb-3">
-            <div
-              className="d-flex align-items-center justify-content-center"
-              style={{ position: "relative" }}
-            >
-              <MdArrowBackIosNew
-                size={20}
-                style={{ position: "absolute", left: "10px" }}
-              />
-              <h1 className="m-0 main-heading">My Account</h1>
-            </div>
+          <MdArrowBackIosNew
+            size={20}
+            style={{ position: "absolute", left: "10px" }}
+          />
+          <h1 className="m-0 main-heading">My Account</h1>
+        </div>
 
-            <div className="mt-5">
-              <PrimaryCard
-                title="Roadmap"
-                info="Tell us your ideas and feedback."
-                btnBgColor=""
-                btnColor=""
-                btnText=""
-                btnShow={false}
-              />
-
-              <Card
-                style={{ width: "95%", margin: "auto" }}
-                className="bg-white mb-3"
-              >
-                <Card.Body className="d-flex justify-content-between align-items-center">
-                  <div className="">
-                    <h3 className="m-0 mb-2">Roadmap</h3>
-                    <p className="m-0">Tell us your ideas and feedback.</p>
-                  </div>
-
-                  <Button variant="danger" className="rounded-5">
-                    High
-                  </Button>
-                  <div>
-                    <MdArrowForwardIos size={18} />
-                  </div>
-                </Card.Body>
-              </Card>
-            </div>
-          </div>
-
-          <div className="pb-5 mx-auto text-center" style={{ width: "90%" }}>
-            <div className="d-grid mb-3">
-              <Button
-                variant="primary"
-                size="lg"
-                style={{ backgroundColor: "#00A991", border: "none" }}
-                className="custom-block-btn"
-              >
-                Logout
-              </Button>
-            </div>
-            <p
-              className="m-0 text-decoration-underline last-heading"
-              onClick={() => setIsOpen(true)}
-            >
-              Delete my account
-            </p>
-          </div>
+        <div className="mt-5">
+          <AccountCard
+            title="Roadmap"
+            info="Tell us your ideas and feedback."
+          />
         </div>
       </div>
+
+      <div className="pb-5 mx-auto text-center" style={{ width: "90%" }}>
+        <div className="d-grid mb-3">
+          <Button
+            variant="primary"
+            size="lg"
+            style={{ backgroundColor: "#00A991", border: "none" }}
+            className="custom-block-btn"
+          >
+            Log Out
+          </Button>
+        </div>
+        <p
+          className="m-0 text-decoration-underline last-heading"
+          onClick={() => setIsOpen(true)}
+        >
+          Delete my account
+        </p>
+      </div>
+
       <InfoModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );
@@ -108,13 +74,15 @@ const InfoModal = (props) => {
           <Button
             variant="primary"
             size="lg"
-            style={{ backgroundColor: "#D21C1C", border: "none" }}
-            className="custom-block-btn mb-3"
+            className="custom-danger-btn mb-3 "
             onClick={() => setIsOpen(false)}
           >
             Delete My Account
           </Button>
-          <p className="text-center last-heading" style={{ color: "#D21C1C" }}>
+          <p
+            className="text-center last-heading text-red"
+            onClick={() => setIsOpen(false)}
+          >
             Cancel
           </p>
         </div>

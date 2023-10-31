@@ -7,36 +7,47 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import CreateProject from "./pages/CreateProject";
 import MyProjects from "./pages/MyProjects";
+import Layout from "./components/Layout";
+import EditIssue from "./pages/EditIssue";
+
+const layoutWrapper = (props) => {
+  return <Layout>{props}</Layout>;
+};
 
 const App = () => {
   const router = createBrowserRouter([
     {
       path: "/my-account",
-      element: <MyAccount />,
+      element: layoutWrapper(<MyAccount />),
+      // element: {layoutWrapper(<MyAccount />)}
     },
     {
       path: "/issues",
-      element: <Issues />,
+      element: layoutWrapper(<Issues />),
     },
     {
       path: "/add-issue",
-      element: <AddIssue />,
+      element: layoutWrapper(<AddIssue />),
+    },
+    {
+      path: "/edit-issue",
+      element: layoutWrapper(<EditIssue />),
     },
     {
       path: "/login",
-      element: <Login />,
+      element: layoutWrapper(<Login />),
     },
     {
       path: "/",
-      element: <Home />,
+      element: layoutWrapper(<Home />),
     },
     {
       path: "/create-project",
-      element: <CreateProject />,
+      element: layoutWrapper(<CreateProject />),
     },
     {
-      path: "/my-projects",
-      element: <MyProjects />,
+      path: "/dashboard",
+      element: layoutWrapper(<MyProjects />),
     },
   ]);
 

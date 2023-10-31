@@ -8,7 +8,7 @@ import ImageCard from "../components/Card/ImageCard";
 import Carousel from "react-multi-carousel";
 import { useNavigate } from "react-router-dom";
 
-const AddIssue = () => {
+const EditIssue = () => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -47,7 +47,7 @@ const AddIssue = () => {
                 style={{ position: "absolute", left: "10px" }}
                 onClick={() => navigate(-1)}
               />
-              <h1 className="m-0 main-heading">New Issue</h1>
+              <h1 className="m-0 main-heading">Edit Issue</h1>
             </div>
 
             <div className="mt-5 mx-auto" style={{ width: "90%" }}>
@@ -60,6 +60,7 @@ const AddIssue = () => {
                     type="email"
                     placeholder="What's the name of this issue ?"
                     className="input-box"
+                    value="Blocked drain"
                   />
                 </Form.Group>
                 <Form.Group
@@ -70,6 +71,7 @@ const AddIssue = () => {
                     as="textarea"
                     rows={3}
                     placeholder="How would you describe this issue ?"
+                    value="The drain is completely blocked with dirt and debris. It needs removing and then washing out with water to ensure the water flows freely into the sewer."
                   />
                 </Form.Group>
 
@@ -159,4 +161,4 @@ const AddImagesModal = (props) => {
   );
 };
 
-export default AddIssue;
+export default EditIssue;
