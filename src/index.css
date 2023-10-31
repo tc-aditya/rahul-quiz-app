@@ -4,6 +4,10 @@
   font-family: "Inter", sans-serif;
 }
 
+#root {
+  overflow: hidden;
+}
+
 .custom-round-btn {
   width: 100px;
   height: 32px;

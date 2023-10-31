@@ -69,7 +69,13 @@ const InfoModal = (props) => {
   const navigate = useNavigate();
 
   return (
-    <Modal show={isOpen} onHide={() => setIsOpen(false)} size="lg" centered>
+    <Modal
+      backdrop="static"
+      show={isOpen}
+      onHide={() => setIsOpen(false)}
+      size="lg"
+      centered
+    >
       <Modal.Body>
         <h3 className="m-0 mb-2 text-center">Congratulations!</h3>
         <p className="m-0 mb-3 last-heading text-center">

@@ -58,7 +58,13 @@ const InfoModal = (props) => {
   const { isOpen, setIsOpen } = props;
 
   return (
-    <Modal show={isOpen} onHide={() => setIsOpen(false)} size="lg" centered>
+    <Modal
+      backdrop="static"
+      show={isOpen}
+      onHide={() => setIsOpen(false)}
+      size="lg"
+      centered
+    >
       <Modal.Body>
         <div className="mb-3 text-center">
           <img src={DeleteIcon} alt="delete_icon" />
