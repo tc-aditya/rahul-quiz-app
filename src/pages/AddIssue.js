@@ -32,109 +32,97 @@ const AddIssue = () => {
 
   return (
     <>
-      <div className="row">
+      <div className="pt-5 mb-3">
         <div
-          className="col-md-6 col-sm-12 mx-auto d-flex flex-column justify-content-between"
-          style={{ minHeight: "100vh", backgroundColor: "#EFEFEF" }}
+          className="d-flex align-items-center justify-content-center"
+          style={{ position: "relative" }}
         >
-          <div className="pt-5 mb-3">
-            <div
-              className="d-flex align-items-center justify-content-center"
-              style={{ position: "relative" }}
-            >
-              <MdArrowBackIosNew
-                size={20}
-                style={{ position: "absolute", left: "10px" }}
-                onClick={() => navigate(-1)}
+          <MdArrowBackIosNew
+            size={20}
+            style={{ position: "absolute", left: "10px" }}
+            onClick={() => navigate(-1)}
+          />
+          <h1 className="m-0 main-heading">New Issue</h1>
+        </div>
+
+        <div className="mt-5 mx-auto" style={{ width: "90%" }}>
+          <Form>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Control
+                type="email"
+                placeholder="What's the name of this issue ?"
+                className="input-box"
               />
-              <h1 className="m-0 main-heading">New Issue</h1>
-            </div>
+            </Form.Group>
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlTextarea1"
+            >
+              <Form.Control
+                as="textarea"
+                rows={3}
+                placeholder="How would you describe this issue ?"
+              />
+            </Form.Group>
 
-            <div className="mt-5 mx-auto" style={{ width: "90%" }}>
-              <Form>
-                <Form.Group
-                  className="mb-3"
-                  controlId="exampleForm.ControlInput1"
-                >
-                  <Form.Control
-                    type="email"
-                    placeholder="What's the name of this issue ?"
-                    className="input-box"
-                  />
-                </Form.Group>
-                <Form.Group
-                  className="mb-3"
-                  controlId="exampleForm.ControlTextarea1"
-                >
-                  <Form.Control
-                    as="textarea"
-                    rows={3}
-                    placeholder="How would you describe this issue ?"
-                  />
-                </Form.Group>
+            <div className="d-flex justify-content-around align-items-center mt-5 mx-auto">
+              <Button variant="dark" className="rounded-5 custom-round-btn">
+                Low
+              </Button>
 
-                <div className="d-flex justify-content-around align-items-center mt-5 mx-auto">
-                  <Button variant="dark" className="rounded-5 custom-round-btn">
-                    Low
-                  </Button>
+              <Button variant="primary" className="rounded-5 custom-round-btn">
+                Medium
+              </Button>
 
-                  <Button
-                    variant="primary"
-                    className="rounded-5 custom-round-btn"
-                  >
-                    Medium
-                  </Button>
-
-                  <Button variant="dark" className="rounded-5 custom-round-btn">
-                    High
-                  </Button>
-                </div>
-
-                <div className="mt-5">
-                  <Carousel
-                    swipeable={true}
-                    draggable={true}
-                    responsive={responsive}
-                    infinite={true}
-                    autoPlaySpeed={1000}
-                    keyBoardControl={true}
-                    customTransition="all .5"
-                    transitionDuration={500}
-                    containerClass="carousel-container"
-                    removeArrowOnDeviceType={["tablet", "mobile"]}
-                    dotListClass="custom-dot-list-style"
-                    itemClass="carousel-item-padding-40-px"
-                  >
-                    <ImageCard />
-                    <ImageCard />
-                    <ImageCard />
-                  </Carousel>
-                </div>
-              </Form>
-            </div>
-          </div>
-
-          <div className="pb-5 mx-auto text-center" style={{ width: "90%" }}>
-            <div className="d-grid mb-3">
-              <Button
-                variant="primary"
-                size="lg"
-                onClick={() => setIsOpen(true)}
-                className="custom-block-btn"
-              >
-                Add Images
+              <Button variant="dark" className="rounded-5 custom-round-btn">
+                High
               </Button>
             </div>
 
-            <p
-              className="m-0 text-decoration-underline last-heading"
-              onClick={() => navigate("/issues")}
-            >
-              I'm done creating this issue
-            </p>
-          </div>
+            <div className="mt-5">
+              <Carousel
+                swipeable={true}
+                draggable={true}
+                responsive={responsive}
+                infinite={true}
+                autoPlaySpeed={1000}
+                keyBoardControl={true}
+                customTransition="all .5"
+                transitionDuration={500}
+                containerClass="carousel-container"
+                removeArrowOnDeviceType={["tablet", "mobile"]}
+                dotListClass="custom-dot-list-style"
+                itemClass="carousel-item-padding-40-px"
+              >
+                <ImageCard />
+                <ImageCard />
+                <ImageCard />
+              </Carousel>
+            </div>
+          </Form>
         </div>
       </div>
+
+      <div className="pb-5 mx-auto text-center" style={{ width: "90%" }}>
+        <div className="d-grid mb-3">
+          <Button
+            variant="primary"
+            size="lg"
+            onClick={() => setIsOpen(true)}
+            className="custom-block-btn"
+          >
+            Add Images
+          </Button>
+        </div>
+
+        <p
+          className="m-0 text-decoration-underline last-heading"
+          onClick={() => navigate("/issues")}
+        >
+          I'm done creating this issue
+        </p>
+      </div>
+
       <AddImagesModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );

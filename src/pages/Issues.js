@@ -63,10 +63,20 @@ const Issues = () => {
               btnBgColor="#00A991"
             />
           </div>
+
+          <div onClick={() => navigate("/edit-issue")}>
+            <PrimaryCard
+              title="Door is broken"
+              info="Last edited 23/10/2023"
+              btnShow={true}
+              btnText="Low"
+              btnBgColor="#00A991"
+            />
+          </div>
         </div>
       </div>
 
-      <div className="pb-5 mx-auto text-center" style={{ width: "90%" }}>
+      <div className="pb-5 mx-auto text-center mt-5" style={{ width: "90%" }}>
         <div className="d-grid mb-3">
           <Button
             variant="primary"

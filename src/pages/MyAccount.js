@@ -4,8 +4,10 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import DeleteIcon from "../images/delete-icon.svg";
 import AccountCard from "../components/Card/AccountCard";
+import { useNavigate } from "react-router-dom";
 
 const MyAccount = () => {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -18,6 +20,7 @@ const MyAccount = () => {
           <MdArrowBackIosNew
             size={20}
             style={{ position: "absolute", left: "10px" }}
+            onClick={() => navigate(-1)}
           />
           <h1 className="m-0 main-heading">My Account</h1>
         </div>
