@@ -1,12 +1,11 @@
 {
-  "name": "quiz-app",
+  "name": "Task App",
   "version": "6.0.0",
   "private": true,
   "author": {
-    "name": "Safdar Jamal",
-    "url": "https://safdarjamal.github.io"
+    "name": "Rahul Phalke"
   },
-  "homepage": "https://safdarjamal.github.io/quiz-app/",
+  "homepage": "/",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -23,6 +22,7 @@
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
+    "react-multi-carousel": "^2.8.4",
     "react-router-dom": "^6.17.0",
     "react-scripts": "5.0.1",
     "semantic-ui-css": "^2.5.0",

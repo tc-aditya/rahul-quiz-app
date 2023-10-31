@@ -1,27 +1,33 @@
 @import url(../node_modules/semantic-ui-css/semantic.min.css);
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 
 * {
   font-family: "Inter", sans-serif;
 }
 
 .custom-round-btn {
-  width: 100px;
+  width: 90px;
 }
 
 .main-heading {
   font-size: 28px;
+  /* font-weight: 900; */
   font-weight: 700;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
 }
 
 .custom-block-btn {
   font-size: 14px;
   font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #00a991;
+  border: none;
 }
 
 .last-heading {
-  font-weight: 400;
+  font-weight: 500;
+  /* font-weight: 400; */
   font-size: 14px;
 }
 
