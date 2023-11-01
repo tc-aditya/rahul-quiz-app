@@ -54,10 +54,7 @@ const AddIssue = () => {
                 className="input-box"
               />
             </Form.Group>
-            <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlTextarea1"
-            >
+            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
               <Form.Control
                 as="textarea"
                 rows={3}
@@ -65,7 +62,7 @@ const AddIssue = () => {
               />
             </Form.Group>
 
-            <div className="d-flex justify-content-around align-items-center mt-5 mx-auto">
+            <div className="d-flex justify-content-around align-items-center mt-4 mx-auto btn-div">
               <Button variant="dark" className="rounded-5 custom-round-btn">
                 Low
               </Button>

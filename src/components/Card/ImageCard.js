@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 
 const ImageCard = () => {
   return (
-    <Card style={{ width: "10rem" }}>
+    <Card className="card-item" >
       <Card.Header className="text-end text-red">Delete</Card.Header>
       <Card.Img
         variant="top"

@@ -3,6 +3,9 @@
 * {
   font-family: "Inter", sans-serif;
 }
+body {
+  background-color: #efefef;
+}
 
 #root {
   /* overflow: hidden; */
@@ -94,7 +97,7 @@
 }
 
 .wrapper-layout {
-  min-height: 100vh;
+  min-height: 90vh;
   background-color: #efefef;
 }
 
@@ -117,10 +120,13 @@
   background-color: #def0fc;
   color: #0172cb;
 }
+.form-control {
+  font-size: 14px;
+}
 
 /* media queries */
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 390px) {
   .modal-btn-blue {
     font-size: 14px;
   }
@@ -128,4 +134,13 @@
   .modal-btn-light {
     font-size: 14px;
   }
+}
+
+.react-multi-carousel-track .card-item:first-child{
+  margin-right: 10px !important;
+}
+
+
+.btn-div{
+  gap:10px;
 }

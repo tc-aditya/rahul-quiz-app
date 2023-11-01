@@ -75,7 +75,7 @@ const EditIssue = () => {
                   />
                 </Form.Group>
 
-                <div className="d-flex justify-content-around align-items-center mt-5 mx-auto">
+                <div className="d-flex justify-content-around align-items-center mt-5 mx-auto btn-div">
                   <Button variant="dark" className="rounded-5 custom-round-btn">
                     Low
                   </Button>
