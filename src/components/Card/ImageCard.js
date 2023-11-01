@@ -8,7 +8,7 @@ const ImageCard = () => {
       <Card.Img
         variant="top"
         src="https://placehold.co/150x100"
-        className="p-3"
+        className="p-1"
       />
     </Card>
   );
