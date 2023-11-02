@@ -50,11 +50,14 @@ const AddIssue = () => {
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Control
                 type="email"
-                placeholder="What's the name of this issue ?"
+                placeholder="What's the name of this issue?"
                 className="input-box"
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlTextarea1"
+            >
               <Form.Control
                 as="textarea"
                 rows={3}
@@ -132,9 +135,9 @@ const AddImagesModal = (props) => {
     <Modal show={isOpen} onHide={() => setIsOpen(false)} size="lg" centered>
       <Modal.Body>
         <h3 className="m-0 mb-2">Add Images</h3>
-        <p className="m-0 mb-3">How do you want to add images ?</p>
+        <p className="m-0 mb-3">How do you want to add images?</p>
         <div className="d-flex gap-2">
-          <Button className="w-50 modal-btn-blue bg-blue">Take Photo</Button>
+          <Button className="w-50 modal-btn-blue bg-blue">Take photo</Button>
           <Button className="w-50 modal-btn-light bg-lblue text-blue">
             Upload from gallery
           </Button>

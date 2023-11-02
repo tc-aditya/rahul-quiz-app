@@ -65,7 +65,7 @@ const Home = () => {
           className="m-0 text-decoration-underline last-heading"
           onClick={() => navigate("/login")}
         >
-          Already have an account ? Log in here
+          Already have an account? Log in here
         </p>
       </div>
     </>

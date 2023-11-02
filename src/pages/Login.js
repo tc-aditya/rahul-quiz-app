@@ -23,7 +23,7 @@ const Login = () => {
           </h1>
         </div>
 
-        <div className="mt-5 mx-auto" style={{ width: "65%" }}>
+        <div className="mt-5 mx-auto" style={{ width: "80%" }}>
           <p className="m-0 last-heading">
             Just enter your email address and we'll email you a magic link to
             log straight in.
@@ -36,7 +36,7 @@ const Login = () => {
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Control
               type="email"
-              placeholder="What's the name of this issue ?"
+              placeholder="What's the name of this issue?"
               className="input-box"
             />
           </Form.Group>

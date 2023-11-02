@@ -41,7 +41,7 @@ const CreateProject = () => {
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Control
                 type="email"
-                placeholder="What's the name of this project ?"
+                placeholder="What's the name of this project?"
                 className="input-box"
               />
             </Form.Group>
