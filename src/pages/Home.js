@@ -16,7 +16,7 @@ const Home = () => {
 
         <div className="mt-4 mx-auto" style={{ width: "90%" }}>
           <p className="last-heading w-75 mx-auto text-center">
-            Kick chaos to the curb and make your site audits a breeze
+            Kick chaos to the curb and make your site audits a breeze.
           </p>
         </div>
 
@@ -28,12 +28,22 @@ const Home = () => {
 
           <div className="d-flex justify-content-start align-items-center gap-2 mb-2">
             <img src={Badge} alt="badge" />
-            <p className="last-heading m-0">Create unlimited projects</p>
+            <p className="last-heading m-0">Upload multiple photos per issue</p>
           </div>
 
           <div className="d-flex justify-content-start align-items-center gap-2 mb-2">
             <img src={Badge} alt="badge" />
-            <p className="last-heading m-0">Create unlimited projects</p>
+            <p className="last-heading m-0">100% web-based, always in sync</p>
+          </div>
+
+          <div className="d-flex justify-content-start align-items-center gap-2 mb-2">
+            <img src={Badge} alt="badge" />
+            <p className="last-heading m-0">Access on mobile or desktop</p>
+          </div>
+
+          <div className="d-flex justify-content-start align-items-center gap-2 mb-2">
+            <img src={Badge} alt="badge" />
+            <p className="last-heading m-0">Contribute to our roadmap</p>
           </div>
         </div>
       </div>
