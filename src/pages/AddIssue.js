@@ -61,7 +61,7 @@ const AddIssue = () => {
               <Form.Control
                 as="textarea"
                 rows={3}
-                placeholder="How would you describe this issue ?"
+                placeholder="How would you describe this issue?"
               />
             </Form.Group>
 
